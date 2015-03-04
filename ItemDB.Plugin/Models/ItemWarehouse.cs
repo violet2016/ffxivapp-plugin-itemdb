@@ -53,7 +53,7 @@ namespace ItemDB.Plugin.Models
             {Inventory.Container.INVENTORY_4, "物品"},
             {Inventory.Container.CURRENT_EQ, "当前装备"},
             {Inventory.Container.CRYSTALS, "物品-水晶"},
-            {Inventory.Container.MONEY, "货币"},
+            {Inventory.Container.EXTRA_EQ, "货币"},
             {Inventory.Container.AC_MH, "兵装库-主手"},
             {Inventory.Container.AC_OH, "兵装库-副手"},
             {Inventory.Container.AC_HEAD, "兵装库-头部"},
