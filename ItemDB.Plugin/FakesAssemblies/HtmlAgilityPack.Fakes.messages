@@ -1,0 +1,61 @@
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.EncodingFoundException 生成存根: 类型对 exported or assembly(HtmlAgilityPack.Fakes) 不可见。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlAttributeCollection 生成存根: 类型没有系列可见的构造函数。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlCommentNode 生成存根: 类型没有系列可见的构造函数。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlConsoleListener 生成存根: 类型对 exported or assembly(HtmlAgilityPack.Fakes) 不可见。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlElementFlag 生成存根: 类型是一个值类型。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlNameTable 生成存根: 类型对 exported or assembly(HtmlAgilityPack.Fakes) 不可见。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlNodeType 生成存根: 类型是一个值类型。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlParseError 生成存根: 类型没有系列可见的构造函数。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlParseErrorCode 生成存根: 类型是一个值类型。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlTextNode 生成存根: 类型没有系列可见的构造函数。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.IOLibrary 生成存根: 类型是一个值类型。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.MixedCodeDocumentFragment 生成存根: 类型没有系列可见的构造函数。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.MixedCodeDocumentCodeFragment 生成存根: 类型没有系列可见的构造函数。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.MixedCodeDocumentFragmentList 生成存根: 类型没有系列可见的构造函数。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.MixedCodeDocumentFragmentType 生成存根: 类型是一个值类型。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.MixedCodeDocumentTextFragment 生成存根: 类型没有系列可见的构造函数。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.NameValuePairList 生成存根: 类型对 exported or assembly(HtmlAgilityPack.Fakes) 不可见。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlAttribute 生成存根: 类型没有系列可见的构造函数。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.AttributeValueQuote 生成存根: 类型是一个值类型。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlEntity 生成存根: 类型没有系列可见的构造函数。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlCmdLine 生成存根: 类型对 exported or assembly(HtmlAgilityPack.Fakes) 不可见。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.Trace 生成存根: 类型对 exported or assembly(HtmlAgilityPack.Fakes) 不可见。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.Utilities 生成存根: 类型已密封。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 <PrivateImplementationDetails>{37A178A8-8F42-4354-B5E0-671855EB5B43} 生成存根: 类型不受支持，因为存在内部限制。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.EncodingFoundException 生成填充码: 类型对 exported or assembly(HtmlAgilityPack.Fakes) 不可见。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlAttributeCollection+<AttributesWithName>d__0 生成填充码: 类型不受支持，因为存在内部限制。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlNode+<Ancestors>d__0 生成填充码: 类型不受支持，因为存在内部限制。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlNode+<Ancestors>d__4 生成填充码: 类型不受支持，因为存在内部限制。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlNode+<AncestorsAndSelf>d__8 生成填充码: 类型不受支持，因为存在内部限制。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlNode+<AncestorsAndSelf>d__c 生成填充码: 类型不受支持，因为存在内部限制。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlNode+<DescendantNodes>d__10 生成填充码: 类型不受支持，因为存在内部限制。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlNode+<Descendants>d__19 生成填充码: 类型不受支持，因为存在内部限制。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlNode+<Descendants>d__22 生成填充码: 类型不受支持，因为存在内部限制。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlNode+<DescendantsAndSelf>d__28 生成填充码: 类型不受支持，因为存在内部限制。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlNode+<DescendantsAndSelf>d__2f 生成填充码: 类型不受支持，因为存在内部限制。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlNode+<Elements>d__35 生成填充码: 类型不受支持，因为存在内部限制。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlConsoleListener 生成填充码: 类型对 exported or assembly(HtmlAgilityPack.Fakes) 不可见。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlDocument+ParseState 生成填充码: 类型是一个枚举。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlElementFlag 生成填充码: 类型是一个枚举。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlNameTable 生成填充码: 类型对 exported or assembly(HtmlAgilityPack.Fakes) 不可见。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlNodeCollection+<Descendants>d__0 生成填充码: 类型不受支持，因为存在内部限制。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlNodeCollection+<Descendants>d__9 生成填充码: 类型不受支持，因为存在内部限制。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlNodeCollection+<Elements>d__12 生成填充码: 类型不受支持，因为存在内部限制。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlNodeCollection+<Elements>d__1b 生成填充码: 类型不受支持，因为存在内部限制。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlNodeCollection+<Nodes>d__24 生成填充码: 类型不受支持，因为存在内部限制。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlNodeType 生成填充码: 类型是一个枚举。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlParseErrorCode 生成填充码: 类型是一个枚举。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlWeb+PostResponseHandler 生成填充码: 类型是一个委托。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlWeb+PreHandleDocumentHandler 生成填充码: 类型是一个委托。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlWeb+PreRequestHandler 生成填充码: 类型是一个委托。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.IOLibrary 生成填充码: 类型对 exported or assembly(HtmlAgilityPack.Fakes) 不可见。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.MixedCodeDocumentFragmentType 生成填充码: 类型是一个枚举。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.NameValuePairList 生成填充码: 类型对 exported or assembly(HtmlAgilityPack.Fakes) 不可见。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.AttributeValueQuote 生成填充码: 类型是一个枚举。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlEntity+ParseState 生成填充码: 类型是一个枚举。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.IPermissionHelper 生成填充码: 类型是一个接口。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.MixedCodeDocument+ParseState 生成填充码: 类型是一个枚举。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.HtmlCmdLine 生成填充码: 类型对 exported or assembly(HtmlAgilityPack.Fakes) 不可见。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.Trace 生成填充码: 类型对 exported or assembly(HtmlAgilityPack.Fakes) 不可见。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 HtmlAgilityPack.Utilities 生成填充码: 类型对 exported or assembly(HtmlAgilityPack.Fakes) 不可见。
+D:\code\ffxivapp\ffxivapp-sample-plugin-master\Sample.Plugin\Fakes\HtmlAgilityPack.fakes : warning : 无法为 <PrivateImplementationDetails>{37A178A8-8F42-4354-B5E0-671855EB5B43} 生成填充码: 类型不受支持，因为存在内部限制。
