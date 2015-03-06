@@ -1,0 +1,73 @@
+﻿{
+    "PluginInfo": {
+        "Name": "FFXIVAPP.Plugin.ItemDB",
+        "Version": "1.0.0",
+        "Files": [
+            {
+                "Name": "ItemDB.Plugin.dll",
+                "Location": ""
+            },
+            {
+                "Name": "Logo.png",
+                "Location": ""
+            },
+            {
+                "Name": "PluginInfo.xml",
+                "Location": ""
+            },
+			{
+				"Name": "0-499.json",
+				"Location":"DescFiles"
+			},
+			{
+				"Name": "1500-1999.json",
+				"Location":"DescFiles"
+			},
+			{
+				"Name": "2000-2499.json",
+				"Location":"DescFiles"
+			},
+			{
+				"Name": "2500-2999.json",
+				"Location":"DescFiles"
+			},
+			{
+				"Name": "3000-3499.json",
+				"Location":"DescFiles"
+			},
+			{
+				"Name": "3500-3999.json",
+				"Location":"DescFiles"
+			},
+			{
+				"Name": "4000-4499.json",
+				"Location":"DescFiles"
+			},
+			{
+				"Name": "4500-5999.json",
+				"Location":"DescFiles"
+			},
+			{
+				"Name": "6000-6499.json",
+				"Location":"DescFiles"
+			},
+			{
+				"Name": "6500-6999.json",
+				"Location":"DescFiles"
+			},
+			{
+				"Name": "7000-7499.json",
+				"Location":"DescFiles"
+			},
+			{
+				"Name": "7500-7999.json",
+				"Location":"DescFiles"
+			},
+			{
+				"Name": "7000-7499.json",
+				"Location":"DescFiles"
+			}
+        ],
+		"SourceURI": "https://github.com/violet1986/ffxivapp-plugin-itemdb/raw/master/distribution/"
+    }
+}
