@@ -132,7 +132,9 @@
     <Content Include="Logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="VERSION.json" />
+    <None Include="VERSION.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <Resource Include="Media\Images\License.png" />
     <Resource Include="Media\Images\Refresh.png" />
     <Resource Include="Media\Images\About.png" />

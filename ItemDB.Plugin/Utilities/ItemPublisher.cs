@@ -91,10 +91,23 @@ namespace ItemDB.Plugin.Utilities
                 }
             }
         }
+        private static uint GetAllItemAmount(List<InventoryEntity> inventoryEntry)
+        {
+            uint count = 0;
+            foreach(var container in inventoryEntry)
+            {
+                count += container.Amount;
+            }
+            return count;
+        }
         public static void Process(List<InventoryEntity> inventoryEntry)
         {
             try
             {
+                if (GetAllItemAmount(inventoryEntry) == 0)
+                {
+                    return;
+                }
                 List<ItemFullInfo> allItems = new List<ItemFullInfo>();
                 HireCatalog.Clear();
                 foreach (var container in inventoryEntry)
