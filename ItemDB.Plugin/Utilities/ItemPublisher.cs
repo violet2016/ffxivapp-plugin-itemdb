@@ -46,7 +46,8 @@ namespace ItemDB.Plugin.Utilities
     public static class ItemPublisher
     {
         public static List<ItemFullInfo> HireCatalog = new List<ItemFullInfo>();
-        
+        //TODO remove this when character name bug is fixed
+        public static bool logout = false;
         private static void WriteCatalog(List<ItemFullInfo> list, int hire = 0)
         {
             if (Constants.CharacterName == "")
@@ -106,6 +107,13 @@ namespace ItemDB.Plugin.Utilities
             {
                 if (GetAllItemAmount(inventoryEntry) == 0)
                 {
+                    logout = true;
+                    return;
+                }
+                if (logout == true)
+                {
+                    //skip the first saving after logout
+                    logout = false;
                     return;
                 }
                 List<ItemFullInfo> allItems = new List<ItemFullInfo>();
