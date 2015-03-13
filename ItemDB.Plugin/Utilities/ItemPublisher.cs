@@ -48,7 +48,9 @@ namespace ItemDB.Plugin.Utilities
         public static List<ItemFullInfo> HireCatalog = new List<ItemFullInfo>();
         //TODO remove this when character name bug is fixed
         public static bool logout = false;
-        private static void WriteCatalog(List<ItemFullInfo> list, int hire = 0)
+        private static int lastcount = -1;
+        private static String lastName = "";
+        private static void WriteCatalog(List<ItemFullInfo> list, int hire = 0, int company = 0)
         {
             if (Constants.CharacterName == "")
             {
@@ -61,13 +63,17 @@ namespace ItemDB.Plugin.Utilities
             {
                 di.Create();
             }
-            String suffix;
-            if (hire == 0)
+            String suffix = "";
+            if (hire == 0 && company == 0)
             {
                 suffix= Constants.CharacterName + ".json";
             }
-            else {
+            else if (hire != 0){
                 suffix= Constants.CharacterName + "-雇员"+hire.ToString()+".json";
+            }
+            else if (company != 0)
+            {
+                suffix = Constants.CharacterName + "-部队储物柜"+ ".json";
             }
             var fileName = Path.Combine(userPath, suffix);
 
@@ -88,7 +94,7 @@ namespace ItemDB.Plugin.Utilities
             {
                 if (HireCatalog.Count > 0)
                 {
-                    WriteCatalog(HireCatalog, hire);
+                    WriteCatalog(HireCatalog, hire, 0);
                 }
             }
         }
@@ -105,7 +111,8 @@ namespace ItemDB.Plugin.Utilities
         {
             try
             {
-                if (GetAllItemAmount(inventoryEntry) == 0)
+                uint allitemscount = GetAllItemAmount(inventoryEntry);
+                if (allitemscount <= 5)
                 {
                     logout = true;
                     return;
@@ -117,20 +124,36 @@ namespace ItemDB.Plugin.Utilities
                     return;
                 }
                 List<ItemFullInfo> allItems = new List<ItemFullInfo>();
+                List<ItemFullInfo> companyItems = new List<ItemFullInfo>();
                 HireCatalog.Clear();
+                uint countnull = 0;
                 foreach (var container in inventoryEntry)
                 {
                     if (container.Amount > 0)
                     {
                         foreach (var item in container.Items)
                         {
+                            //in case of memory overwritten
+                            
                             var lItem = new ItemFullInfo();
                             lItem.Info = item;
                             lItem.Desc = NameDatabase.GetDescFromInfo(item);
+                            if (lItem.Desc == null)
+                            {
+                                countnull++;
+                                continue;
+                            }
                             lItem.Location = new Location();
                             lItem.Location.Type = container.Type;
                             lItem.Location.Character = Constants.CharacterName;
-                            if (container.Type < Inventory.Container.HIRE_1 || container.Type > Inventory.Container.HIRE_7)
+
+
+                            if (container.Type == Inventory.Container.COMPANY_1 || container.Type == Inventory.Container.COMPANY_2 || container.Type == Inventory.Container.COMPANY_3)
+                            {
+                                companyItems.Add(lItem);
+                            }
+                        
+                            else if (container.Type < Inventory.Container.HIRE_1 || container.Type > Inventory.Container.HIRE_7)
                             { 
                                 allItems.Add(lItem); 
                             }
@@ -144,10 +167,37 @@ namespace ItemDB.Plugin.Utilities
                     }
 
                 }
-                 
-                WriteCatalog(allItems); 
+                if (countnull*2 > allitemscount)
+                {
+                    return;
+                }
                 
                 
+                if (lastcount == -1)
+                {
+                    lastcount = allItems.Count;
+                    lastName = Constants.CharacterName;
+                }
+                else
+                {
+
+                    if (allItems.Count < lastcount/2 && Constants.CharacterName == lastName)
+                    {
+                        return;
+                    }
+                    if (Constants.CharacterName != lastName)
+                    {
+                        lastName = Constants.CharacterName;
+                    }
+                }
+
+                WriteCatalog(allItems, 0, 0);
+                if (companyItems.Count > 0)
+                {
+                    WriteCatalog(companyItems, 0, 1);
+                }
+                
+                lastcount = allItems.Count;
                
             }
             catch (Exception ex)
