@@ -61,7 +61,15 @@ namespace ItemDB.Plugin.Utilities
 
             if (!di.Exists)
             {
-                di.Create();
+                try
+                {
+                    di.Create();
+                    Logging.Log(LogManager.GetCurrentClassLogger(), "ITEMDB Log: Created Users folder");
+                }
+                catch (Exception ex)
+                {
+                    Logging.Log(LogManager.GetCurrentClassLogger(), "ITEMDB Error: Exception on create Users folder", ex);
+                }
             }
             String suffix = "";
             if (hire == 0 && company == 0)
@@ -76,13 +84,22 @@ namespace ItemDB.Plugin.Utilities
                 suffix = Constants.CharacterName + "-部队储物柜"+ ".json";
             }
             var fileName = Path.Combine(userPath, suffix);
+            try
+            {
+                var fileStream = new FileStream(fileName, FileMode.Create, FileAccess.Write);
+                string xx = JsonConvert.SerializeObject(list);
 
-            var fileStream = new FileStream(fileName, FileMode.Create, FileAccess.Write);
-            string xx = JsonConvert.SerializeObject(list);
-
-            byte[] bytes = System.Text.Encoding.UTF8.GetBytes(xx);
-            fileStream.Write(bytes, 0, bytes.Length);
-            fileStream.Close();
+                byte[] bytes = System.Text.Encoding.UTF8.GetBytes(xx);
+                fileStream.Write(bytes, 0, bytes.Length);
+                fileStream.Close();
+                Logging.Log(LogManager.GetCurrentClassLogger(), "ITEMDB Log: Finished writing json file");
+            }
+            catch (Exception ex)
+            {
+                Logging.Log(LogManager.GetCurrentClassLogger(), "ITEMDB Error: Exception on create json file", ex);
+            }
+            
+            
         }
         public static void ProcessHire(int hire)
         {
@@ -111,15 +128,18 @@ namespace ItemDB.Plugin.Utilities
         {
             try
             {
+                
                 uint allitemscount = GetAllItemAmount(inventoryEntry);
                 if (allitemscount <= 5)
                 {
+                    Logging.Log(LogManager.GetCurrentClassLogger(), "ITEMDB Log: Less than 5 items, maybe a wrong inventory event");
                     logout = true;
                     return;
                 }
                 if (logout == true)
                 {
                     //skip the first saving after logout
+                    Logging.Log(LogManager.GetCurrentClassLogger(), "ITEMDB Log: Just Logout, skip this inventory");
                     logout = false;
                     return;
                 }
@@ -169,6 +189,7 @@ namespace ItemDB.Plugin.Utilities
                 }
                 if (countnull*2 > allitemscount)
                 {
+                    Logging.Log(LogManager.GetCurrentClassLogger(), "ITEMDB Log: Too many null items, maybe a wrong inventory event");
                     return;
                 }
                 
@@ -183,6 +204,7 @@ namespace ItemDB.Plugin.Utilities
 
                     if (allItems.Count < lastcount/2 && Constants.CharacterName == lastName)
                     {
+                        Logging.Log(LogManager.GetCurrentClassLogger(), "ITEMDB Log: items decreased too fast in the same character, maybe a wrong inventory event");
                         return;
                     }
                     if (Constants.CharacterName != lastName)
