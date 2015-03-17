@@ -1,14 +1,10 @@
 ﻿{
     "PluginInfo": {
         "Name": "FFXIVAPP.Plugin.ItemDB",
-        "Version": "1.0.1.3",
+        "Version": "1.0.1.4",
         "Files": [
             {
                 "Name": "ItemDB.Plugin.dll",
-                "Location": ""
-            },
-			{
-                "Name": "NLog.config",
                 "Location": ""
             },
             {

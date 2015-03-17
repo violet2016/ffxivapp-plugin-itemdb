@@ -41,10 +41,12 @@ using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
 using Newtonsoft.Json.Linq;
 using FFXIVAPP.Common.Core.Memory.Enums;
+using FFXIVAPP.Common.Models;
 namespace ItemDB.Plugin.Utilities
 {
     public static class ItemPublisher
     {
+        private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
         public static List<ItemFullInfo> HireCatalog = new List<ItemFullInfo>();
         //TODO remove this when character name bug is fixed
         public static bool logout = false;
@@ -64,11 +66,12 @@ namespace ItemDB.Plugin.Utilities
                 try
                 {
                     di.Create();
-                    Logging.Log(LogManager.GetCurrentClassLogger(), "ITEMDB Log: Created Users folder");
+                    Logging.Log(Logger, "ITEMDB Log: Created Users folder");
                 }
                 catch (Exception ex)
                 {
-                    Logging.Log(LogManager.GetCurrentClassLogger(), "ITEMDB Error: Exception on create Users folder", ex);
+                    Logging.Log(Logger, new LogItem("Exception on create Users folder", ex, LogLevel.Error));
+                   
                 }
             }
             String suffix = "";
@@ -92,11 +95,12 @@ namespace ItemDB.Plugin.Utilities
                 byte[] bytes = System.Text.Encoding.UTF8.GetBytes(xx);
                 fileStream.Write(bytes, 0, bytes.Length);
                 fileStream.Close();
-                Logging.Log(LogManager.GetCurrentClassLogger(), "ITEMDB Log: Finished writing json file");
+                Logging.Log(Logger, "ITEMDB Log: Finished writing json file");
             }
             catch (Exception ex)
             {
-                Logging.Log(LogManager.GetCurrentClassLogger(), "ITEMDB Error: Exception on create json file", ex);
+                
+                Logging.Log(Logger, new LogItem("Exception on create json file", ex, LogLevel.Error));
             }
             
             
@@ -224,7 +228,7 @@ namespace ItemDB.Plugin.Utilities
             }
             catch (Exception ex)
             {
-                Logging.Log(LogManager.GetCurrentClassLogger(), "", ex);
+                Logging.Log(Logger, new LogItem("Exception on writeCatalog", ex, LogLevel.Error));
             }
         }
     }
