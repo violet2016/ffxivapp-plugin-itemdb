@@ -77,7 +77,7 @@ namespace ItemDB.Plugin.ViewModels
         #endregion
 
         #region Command Bindings
-        private static void SearchItem()
+        public static void SearchItem()
         {
             var searchItem = new ItemFilter
             {

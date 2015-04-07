@@ -39,7 +39,6 @@ using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
 using Newtonsoft.Json.Linq;
 using FFXIVAPP.Common.Core.Memory.Enums;
-using ItemDB.Plugin.Models;
 using FFXIVAPP.Common.RegularExpressions;
 namespace ItemDB.Plugin.Models
 {

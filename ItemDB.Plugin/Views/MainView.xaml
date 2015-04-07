@@ -50,8 +50,8 @@
                                    Text="物品名称:" />
                         <TextBox x:Name="TKey"
                                  Width="150"
-                                 Text="" />
-                        <Button Margin="3 0 0 0"
+                                 Text="" KeyDown="TKey_KeyDown" />
+                        <Button x:Name="SearchButton" Margin="3 0 0 0"
                             Command="{Binding SearchItemCommand}"
                             Content="查询" Width="55" />
                     </DockPanel>
