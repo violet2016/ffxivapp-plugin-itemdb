@@ -75,16 +75,20 @@ namespace ItemDB.Plugin.Utilities
                 }
             }
             String suffix = "";
+            String update = Constants.CharacterName + "的";
             if (hire == 0 && company == 0)
             {
                 suffix= Constants.CharacterName + ".json";
+                update += "物品更新成功";
             }
             else if (hire != 0){
                 suffix= Constants.CharacterName + "-雇员"+hire.ToString()+".json";
+                update += "雇员"+hire.ToString()+"物品更新成功";
             }
             else if (company != 0)
             {
                 suffix = Constants.CharacterName + "-部队储物柜"+ ".json";
+                update += "部队储物柜物品更新成功";
             }
             var fileName = Path.Combine(userPath, suffix);
             try
@@ -95,6 +99,7 @@ namespace ItemDB.Plugin.Utilities
                 byte[] bytes = System.Text.Encoding.UTF8.GetBytes(xx);
                 fileStream.Write(bytes, 0, bytes.Length);
                 fileStream.Close();
+                PluginViewModel.Instance.ResultAmount = "["+DateTime.Now.ToLongTimeString().ToString()+"]"+update;
                 Logging.Log(Logger, "ITEMDB Log: Finished writing json file");
             }
             catch (Exception ex)

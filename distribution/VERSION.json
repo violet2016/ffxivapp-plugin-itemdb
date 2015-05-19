@@ -1,7 +1,7 @@
 ﻿{
     "PluginInfo": {
         "Name": "FFXIVAPP.Plugin.ItemDB",
-        "Version": "1.0.1.6",
+        "Version": "1.0.2.0",
         "Files": [
             {
                 "Name": "ItemDB.Plugin.dll",
