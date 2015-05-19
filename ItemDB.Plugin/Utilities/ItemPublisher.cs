@@ -88,7 +88,7 @@ namespace ItemDB.Plugin.Utilities
             else if (company != 0)
             {
                 suffix = Constants.CharacterName + "-部队储物柜"+ ".json";
-                update += "部队储物柜物品更新成功";
+                update += "个人物品及部队储物柜更新成功";
             }
             var fileName = Path.Combine(userPath, suffix);
             try
