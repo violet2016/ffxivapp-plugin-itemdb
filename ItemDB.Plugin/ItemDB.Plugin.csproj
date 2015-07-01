@@ -39,33 +39,33 @@
   <ItemGroup>
     <Reference Include="FFXIVAPP.Common, Version=2.0.5541.16506, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\TDDOWNLOAD\FFXIVAPP_3.0.5541.25524\FFXIVAPP.Common.dll</HintPath>
+      <HintPath>..\..\ffxivapp-resources-master\FFXIVAPP.Common.dll</HintPath>
     </Reference>
     <Reference Include="FFXIVAPP.IPluginInterface, Version=2.0.5541.16517, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\TDDOWNLOAD\FFXIVAPP_3.0.5541.25524\FFXIVAPP.IPluginInterface.dll</HintPath>
+      <HintPath>..\..\ffxivapp-resources-master\FFXIVAPP.IPluginInterface.dll</HintPath>
     </Reference>
     <Reference Include="FFXIVAPP.Localization, Version=1.0.5518.25782, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\TDDOWNLOAD\FFXIVAPP_3.0.5541.25524\FFXIVAPP.Localization.dll</HintPath>
+      <HintPath>..\..\ffxivapp-resources-master\FFXIVAPP.Localization.dll</HintPath>
     </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.4.9.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\TDDOWNLOAD\FFXIVAPP_3.0.5541.25524\HtmlAgilityPack.dll</HintPath>
+      <HintPath>..\..\ffxivapp-resources-master\HtmlAgilityPack.dll</HintPath>
     </Reference>
     <Reference Include="MahApps.Metro, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\TDDOWNLOAD\FFXIVAPP_3.0.5541.25524\MahApps.Metro.dll</HintPath>
+      <HintPath>..\..\ffxivapp-resources-master\MahApps.Metro.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\TDDOWNLOAD\FFXIVAPP_3.0.5541.25524\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\ffxivapp-resources-master\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="NLog, Version=3.1.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\TDDOWNLOAD\FFXIVAPP_3.0.5541.25524\NLog.dll</HintPath>
+      <HintPath>..\..\ffxivapp-resources-master\NLog.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -76,7 +76,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\MahApps.Metro.1.0.0.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
+      <HintPath>..\..\ffxivapp-resources-master\System.Windows.Interactivity.dll</HintPath>
     </Reference>
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
@@ -88,6 +88,7 @@
     <Compile Include="EventSubscriber.cs" />
     <Compile Include="Initializer.cs" />
     <Compile Include="Helpers\LocaleHelper.cs" />
+    <Compile Include="Localization\Russian.cs" />
     <Compile Include="Localization\English.cs" />
     <Compile Include="Localization\French.cs" />
     <Compile Include="Localization\German.cs" />

@@ -46,7 +46,7 @@ namespace ItemDB.Plugin
 
         public static readonly string[] Supported = new[]
         {
-            "en"
+            "en", "ru"
         };
 
         public static string BaseDirectory
